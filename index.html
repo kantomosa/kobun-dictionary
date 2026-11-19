@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<!-- saved from url=(0228)https://tokyoblobdata2prod.blob.core.windows.net/customer-data/files/citations/ai/2645014486_torituai/index_20261119210148.html?se=2026-11-19T22:01:48Z&sv=2024-08-04&sr=b&sig=qq6NpMmfHE%2FpeeJzyLXqHzbanWuuUDT1DJGl3dVg7wI%3D&sp=r -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>古典文法 動詞・助動詞辞書</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg:#0b1020; --surface:#121a2f; --surface2:#18223b; --card:#151e35;
+  --text:#eef3ff; --muted:#9aa8c7; --line:#2a3554; --accent:#7dd3fc;
+  --accent2:#a78bfa; --good:#34d399; --warn:#fbbf24; --chip:#223050;
+  --shadow:0 18px 50px rgba(0,0,0,.28);
+}
+:root.light {
+  color-scheme: light;
+  --bg:#f6f7fb; --surface:#ffffff; --surface2:#eef2ff; --card:#ffffff;
+  --text:#172033; --muted:#5c667c; --line:#dfe5f2; --accent:#0ea5e9;
+  --accent2:#7c3aed; --good:#059669; --warn:#b45309; --chip:#edf2ff;
+  --shadow:0 14px 36px rgba(17,24,39,.10);
+}
+*{box-sizing:border-box}
+html,body{margin:0; min-height:100%; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP",Meiryo,sans-serif;}
+body{overflow-x:hidden;}
+button,input,select{font:inherit}
+.app{max-width:900px; margin:0 auto; padding:0 14px 88px;}
+.header{position:sticky; top:0; z-index:20; margin:0 -14px; padding:12px 14px 10px; background:linear-gradient(180deg,var(--bg) 76%,rgba(0,0,0,0)); backdrop-filter:blur(14px);}
+.hero{border:1px solid var(--line); background:linear-gradient(135deg,var(--surface),var(--surface2)); border-radius:24px; padding:16px; box-shadow:var(--shadow);}
+.toprow{display:flex; align-items:center; justify-content:space-between; gap:10px}
+h1{font-size:20px; margin:0; letter-spacing:.02em}
+.sub{margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.55}
+.iconbtn{min-width:44px; min-height:44px; border:1px solid var(--line); background:var(--card); color:var(--text); border-radius:999px; display:inline-grid; place-items:center; cursor:pointer}
+.searchbox{margin-top:14px; display:flex; gap:8px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:18px; padding:9px 12px}
+.searchbox input{width:100%; border:0; outline:0; color:var(--text); background:transparent; font-size:16px}
+.controls{display:flex; gap:8px; overflow:auto; padding:10px 2px 2px; scrollbar-width:none}
+.controls::-webkit-scrollbar{display:none}
+.pill{border:1px solid var(--line); background:var(--card); color:var(--text); border-radius:999px; padding:10px 13px; white-space:nowrap; min-height:42px; cursor:pointer}
+.pill.active{background:linear-gradient(135deg,var(--accent),var(--accent2)); color:white; border-color:transparent; font-weight:700}
+.filters{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px}
+select{width:100%; min-height:44px; border:1px solid var(--line); border-radius:14px; padding:0 12px; background:var(--card); color:var(--text)}
+.stats{display:flex; justify-content:space-between; align-items:center; margin:16px 2px 8px; color:var(--muted); font-size:13px}
+.list{display:grid; gap:10px}
+.item{text-align:left; width:100%; border:1px solid var(--line); background:var(--surface); color:var(--text); border-radius:20px; padding:14px; box-shadow:0 8px 22px rgba(0,0,0,.10); cursor:pointer}
+.item:active{transform:scale(.99)}
+.itemhead{display:flex; justify-content:space-between; align-items:flex-start; gap:10px}
+.word{font-size:22px; font-weight:800; letter-spacing:.03em}
+.kana{font-size:12px; color:var(--muted); margin-left:5px; font-weight:500}
+.badges{display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end}
+.badge{font-size:11px; line-height:1; padding:6px 8px; border-radius:999px; background:var(--chip); color:var(--muted); border:1px solid var(--line)}
+.badge.main{color:white; background:var(--accent2); border-color:transparent}
+.badge.verb{background:rgba(52,211,153,.16); color:var(--good); border-color:rgba(52,211,153,.3)}
+.badge.aux{background:rgba(125,211,252,.16); color:var(--accent); border-color:rgba(125,211,252,.3)}
+.summary{margin:10px 0 0; color:var(--muted); line-height:1.55; font-size:14px}
+.tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px}
+.tag{font-size:12px; padding:6px 8px; border-radius:999px; background:var(--chip); color:var(--text)}
+.empty{padding:28px 10px; color:var(--muted); text-align:center}
+.detail{display:none}
+.detail.active,.home.hidden{display:none}
+.home{display:block}
+.detail.active{display:block}
+.backbar{position:sticky; top:0; z-index:30; margin:0 -14px; padding:10px 14px; background:var(--bg); border-bottom:1px solid var(--line)}
+.backbtn{min-height:46px; border:1px solid var(--line); background:var(--surface); color:var(--text); border-radius:999px; padding:0 14px; cursor:pointer}
+.detailHero{margin-top:14px; border:1px solid var(--line); border-radius:26px; background:linear-gradient(135deg,var(--surface),var(--surface2)); padding:18px; box-shadow:var(--shadow)}
+.detailTitle{display:flex; justify-content:space-between; gap:12px; align-items:flex-start}
+.detailTitle h2{font-size:32px; margin:0}
+.card{margin-top:12px; border:1px solid var(--line); border-radius:20px; background:var(--surface); padding:14px}
+.card h3{font-size:15px; margin:0 0 10px; color:var(--accent)}
+.grid2{display:grid; grid-template-columns:1fr; gap:8px}
+.kv{display:flex; justify-content:space-between; gap:12px; padding:10px 0; border-bottom:1px dashed var(--line)}
+.kv:last-child{border-bottom:0}
+.kv span:first-child{color:var(--muted)}
+.tablewrap{overflow-x:auto; border:1px solid var(--line); border-radius:16px}
+table{width:100%; border-collapse:collapse; min-width:520px; background:var(--card)}
+th,td{padding:12px 10px; border-bottom:1px solid var(--line); text-align:center; vertical-align:middle}
+th{color:var(--muted); font-size:12px; background:var(--surface2)}
+td{font-weight:700}
+tr:last-child td{border-bottom:0}
+.meaningList{display:flex; gap:8px; flex-wrap:wrap}
+.note{color:var(--muted); line-height:1.7; margin:0}
+.example{padding:10px 0; border-bottom:1px dashed var(--line)}
+.example:last-child{border-bottom:0}
+.example b{display:block; margin-bottom:4px}
+.footer{color:var(--muted); font-size:12px; line-height:1.6; padding:24px 4px}
+
+/* 縦型活用表 */
+.vconj{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 68px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background:var(--card);
+  max-width:420px;
+  margin:0 auto;
+}
+.vrow{display:contents}
+.vform,.vlabel{
+  min-height:76px;
+  border-bottom:1px solid var(--line);
+  display:grid;
+  place-items:center;
+}
+.vrow:last-child .vform,
+.vrow:last-child .vlabel{border-bottom:0}
+.vform{
+  background:linear-gradient(180deg, rgba(125,211,252,.16), rgba(167,139,250,.10));
+  color:var(--text);
+  font-weight:900;
+  font-size:28px;
+  letter-spacing:.08em;
+  padding:12px 8px;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  line-height:1.25;
+}
+.vrow:nth-child(even) .vform{
+  background:linear-gradient(180deg, rgba(251,191,36,.13), rgba(167,139,250,.08));
+}
+.vform.empty{
+  color:var(--muted);
+  font-size:24px;
+  letter-spacing:0;
+}
+.vlabel{
+  background:var(--surface2);
+  color:var(--muted);
+  font-weight:800;
+  font-size:15px;
+  padding:10px 6px;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  letter-spacing:.08em;
+}
+.vcaption{
+  max-width:420px;
+  margin:10px auto 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.6;
+}
+@media (max-width:380px){
+  .vconj{grid-template-columns:minmax(0,1fr) 58px}
+  .vform{font-size:24px; min-height:70px}
+  .vlabel{font-size:13px}
+}
+
+@media (min-width:700px){
+  .app{padding-left:22px; padding-right:22px}
+  .header,.backbar{margin-left:-22px; margin-right:-22px; padding-left:22px; padding-right:22px}
+  h1{font-size:26px} .list{grid-template-columns:1fr 1fr} .grid2{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <main id="home" class="home">
+    <header class="header">
+      <section class="hero">
+        <div class="toprow">
+          <div>
+            <h1>古典文法 動詞・助動詞辞書</h1>
+            <p class="sub">高校「言語文化」向け。動詞は活用の種類ごと、助動詞は語ごとに、検索・絞り込み・活用表で確認できます。</p>
+          </div>
+          <button id="themeBtn" class="iconbtn" aria-label="テーマ切替">🌙</button>
+        </div>
+        <label class="searchbox">
+          🔎
+          <input id="q" type="search" placeholder="単語・意味・活用・接続で検索">
+        </label>
+        <div class="controls" id="typeFilters">
+          <button class="pill active" data-type="all">すべて</button>
+          <button class="pill" data-type="動詞">動詞</button>
+          <button class="pill" data-type="助動詞">助動詞</button>
+        </div>
+        <div class="filters">
+          <select id="conjFilter" aria-label="活用で絞り込み"><option value="">活用で絞り込み</option><option value="カ行変格活用">カ行変格活用</option><option value="サ行変格活用">サ行変格活用</option><option value="サ変型">サ変型</option><option value="ナ行変格活用">ナ行変格活用</option><option value="ナ変型">ナ変型</option><option value="ラ行変格活用">ラ行変格活用</option><option value="ラ変型">ラ変型</option><option value="下一段活用">下一段活用</option><option value="下二段活用">下二段活用</option><option value="下二段型">下二段型</option><option value="形容詞型">形容詞型</option><option value="形容動詞型">形容動詞型</option><option value="四段活用">四段活用</option><option value="四段型">四段型</option><option value="上一段活用">上一段活用</option><option value="上二段活用">上二段活用</option><option value="特殊型">特殊型</option></select>
+          <select id="connFilter" aria-label="接続で絞り込み"><option value="">接続で絞り込み</option><option value="サ変未然形・四段已然形接続">サ変未然形・四段已然形接続</option><option value="終止形接続（ラ変型には連体形接続）">終止形接続（ラ変型には連体形接続）</option><option value="体言・連体形・助詞「が／の」接続">体言・連体形・助詞「が／の」接続</option><option value="体言・連体形接続">体言・連体形接続</option><option value="体言接続">体言接続</option><option value="未然形接続">未然形接続</option><option value="未然形接続（四段・ナ変・ラ変）">未然形接続（四段・ナ変・ラ変）</option><option value="未然形接続（四段・ナ変・ラ変以外）">未然形接続（四段・ナ変・ラ変以外）</option><option value="連用形接続">連用形接続</option></select>
+        </div>
+      </section>
+    </header>
+    <div class="stats"><span id="count">37件 / 37件</span><span>タップで詳細</span></div>
+    <section id="list" class="list">
+    <button class="item" data-id="verb-yodan">
+      <div class="itemhead">
+        <div><span class="word">四段活用</span><span class="kana">よだんかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">四段活用</span>
+        </div>
+      </div>
+      <p class="summary">未然形a段、連用形i段、終止・連体形u段、已然・命令形e段で活用する。</p>
+      <div class="tags">
+        <span class="tag">ア・イ・ウ・エ段型</span>
+        
+        <span class="tag">a・i・u・u・e・e</span><span class="tag">正格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-kami-ichidan">
+      <div class="itemhead">
+        <div><span class="word">上一段活用</span><span class="kana">かみいちだんかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">上一段活用</span>
+        </div>
+      </div>
+      <p class="summary">イ段を中心に活用する一段活用。代表例は『見る』『射る』。</p>
+      <div class="tags">
+        <span class="tag">イ段型</span>
+        
+        <span class="tag">イ段のみ</span><span class="tag">正格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-kami-nidan">
+      <div class="itemhead">
+        <div><span class="word">上二段活用</span><span class="kana">かみにだんかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">上二段活用</span>
+        </div>
+      </div>
+      <p class="summary">イ段とウ段の二段で活用する。現代語で上一段になるものが多い。</p>
+      <div class="tags">
+        <span class="tag">イ段・ウ段型</span>
+        
+        <span class="tag">i・i・u・uる・uれ・iよ</span><span class="tag">正格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-shimo-ichidan">
+      <div class="itemhead">
+        <div><span class="word">下一段活用</span><span class="kana">しもいちだんかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">下一段活用</span>
+        </div>
+      </div>
+      <p class="summary">エ段を中心に活用する一段活用。古典では代表語『蹴る』を覚える。</p>
+      <div class="tags">
+        <span class="tag">エ段型</span>
+        
+        <span class="tag">エ段のみ</span><span class="tag">正格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-shimo-nidan">
+      <div class="itemhead">
+        <div><span class="word">下二段活用</span><span class="kana">しもにだんかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">下二段活用</span>
+        </div>
+      </div>
+      <p class="summary">エ段とウ段の二段で活用する。現代語で下一段になるものが多い。</p>
+      <div class="tags">
+        <span class="tag">エ段・ウ段型</span>
+        
+        <span class="tag">e・e・u・uる・uれ・eよ</span><span class="tag">正格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-kahen">
+      <div class="itemhead">
+        <div><span class="word">カ行変格活用</span><span class="kana">かぎょうへんかくかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">カ行変格活用</span>
+        </div>
+      </div>
+      <p class="summary">変格活用。該当語は基本的に『来』だけ。</p>
+      <div class="tags">
+        <span class="tag">カ行</span>
+        
+        <span class="tag">こ・き・く・くる・くれ・こ／こよ</span><span class="tag">変格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-sahen">
+      <div class="itemhead">
+        <div><span class="word">サ行変格活用</span><span class="kana">さぎょうへんかくかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">サ行変格活用</span>
+        </div>
+      </div>
+      <p class="summary">変格活用。『す』『おはす』などが該当する。</p>
+      <div class="tags">
+        <span class="tag">サ行</span>
+        
+        <span class="tag">せ・し・す・する・すれ・せよ</span><span class="tag">変格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-nahen">
+      <div class="itemhead">
+        <div><span class="word">ナ行変格活用</span><span class="kana">なぎょうへんかくかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">ナ行変格活用</span>
+        </div>
+      </div>
+      <p class="summary">変格活用。『死ぬ』『往ぬ』が代表。</p>
+      <div class="tags">
+        <span class="tag">ナ行</span>
+        
+        <span class="tag">な・に・ぬ・ぬる・ぬれ・ね</span><span class="tag">変格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="verb-rahen">
+      <div class="itemhead">
+        <div><span class="word">ラ行変格活用</span><span class="kana">らぎょうへんかくかつよう</span></div>
+        <div class="badges">
+          <span class="badge verb">動詞</span>
+          <span class="badge main">ラ行変格活用</span>
+        </div>
+      </div>
+      <p class="summary">変格活用。終止形が『り』で終わる点に注意。</p>
+      <div class="tags">
+        <span class="tag">ラ行</span>
+        
+        <span class="tag">ら・り・り・る・れ・れ</span><span class="tag">変格活用</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-ki">
+      <div class="itemhead">
+        <div><span class="word">き</span><span class="kana">き</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">特殊型</span>
+        </div>
+      </div>
+      <p class="summary">過去。直接経験した過去を表すことが多い。</p>
+      <div class="tags">
+        
+        <span class="tag">連用形接続</span>
+        <span class="tag">過去</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-keri">
+      <div class="itemhead">
+        <div><span class="word">けり</span><span class="kana">けり</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">ラ変型</span>
+        </div>
+      </div>
+      <p class="summary">過去・詠嘆。物語文で多用。</p>
+      <div class="tags">
+        
+        <span class="tag">連用形接続</span>
+        <span class="tag">過去</span><span class="tag">詠嘆</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-tsu">
+      <div class="itemhead">
+        <div><span class="word">つ</span><span class="kana">つ</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">下二段型</span>
+        </div>
+      </div>
+      <p class="summary">完了・強意。</p>
+      <div class="tags">
+        
+        <span class="tag">連用形接続</span>
+        <span class="tag">完了</span><span class="tag">強意</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-nu">
+      <div class="itemhead">
+        <div><span class="word">ぬ</span><span class="kana">ぬ</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">ナ変型</span>
+        </div>
+      </div>
+      <p class="summary">完了・強意。</p>
+      <div class="tags">
+        
+        <span class="tag">連用形接続</span>
+        <span class="tag">完了</span><span class="tag">強意</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-tari-kanryo">
+      <div class="itemhead">
+        <div><span class="word">たり</span><span class="kana">たり</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">ラ変型</span>
+        </div>
+      </div>
+      <p class="summary">完了・存続。</p>
+      <div class="tags">
+        
+        <span class="tag">連用形接続</span>
+        <span class="tag">完了</span><span class="tag">存続</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-ri">
+      <div class="itemhead">
+        <div><span class="word">り</span><span class="kana">り</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">ラ変型</span>
+        </div>
+      </div>
+      <p class="summary">完了・存続。</p>
+      <div class="tags">
+        
+        <span class="tag">サ変未然形・四段已然形接続</span>
+        <span class="tag">完了</span><span class="tag">存続</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-zu">
+      <div class="itemhead">
+        <div><span class="word">ず</span><span class="kana">ず</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">特殊型</span>
+        </div>
+      </div>
+      <p class="summary">打消。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続</span>
+        <span class="tag">打消</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-mu">
+      <div class="itemhead">
+        <div><span class="word">む（ん）</span><span class="kana">む</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">四段型</span>
+        </div>
+      </div>
+      <p class="summary">推量を中心に、意志・勧誘など多義。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続</span>
+        <span class="tag">推量</span><span class="tag">意志</span><span class="tag">適当</span><span class="tag">勧誘</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-muzu">
+      <div class="itemhead">
+        <div><span class="word">むず（んず）</span><span class="kana">むず</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">サ変型</span>
+        </div>
+      </div>
+      <p class="summary">推量・意志。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続</span>
+        <span class="tag">推量</span><span class="tag">意志</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-beshi">
+      <div class="itemhead">
+        <div><span class="word">べし</span><span class="kana">べし</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容詞型</span>
+        </div>
+      </div>
+      <p class="summary">推量・意志・可能・当然・命令・適当。</p>
+      <div class="tags">
+        
+        <span class="tag">終止形接続（ラ変型には連体形接続）</span>
+        <span class="tag">推量</span><span class="tag">意志</span><span class="tag">可能</span><span class="tag">当然</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-maji">
+      <div class="itemhead">
+        <div><span class="word">まじ</span><span class="kana">まじ</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容詞型</span>
+        </div>
+      </div>
+      <p class="summary">打消推量・打消意志など、「べし」の打消に近い。</p>
+      <div class="tags">
+        
+        <span class="tag">終止形接続（ラ変型には連体形接続）</span>
+        <span class="tag">打消推量</span><span class="tag">打消意志</span><span class="tag">不可能</span><span class="tag">打消当然</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-ramu">
+      <div class="itemhead">
+        <div><span class="word">らむ（らん）</span><span class="kana">らむ</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">四段型</span>
+        </div>
+      </div>
+      <p class="summary">現在推量。</p>
+      <div class="tags">
+        
+        <span class="tag">終止形接続（ラ変型には連体形接続）</span>
+        <span class="tag">現在推量</span><span class="tag">現在原因推量</span><span class="tag">伝聞</span><span class="tag">婉曲</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-kemu">
+      <div class="itemhead">
+        <div><span class="word">けむ（けん）</span><span class="kana">けむ</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">四段型</span>
+        </div>
+      </div>
+      <p class="summary">過去推量。</p>
+      <div class="tags">
+        
+        <span class="tag">連用形接続</span>
+        <span class="tag">過去推量</span><span class="tag">過去原因推量</span><span class="tag">伝聞</span><span class="tag">婉曲</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-rashi">
+      <div class="itemhead">
+        <div><span class="word">らし</span><span class="kana">らし</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">特殊型</span>
+        </div>
+      </div>
+      <p class="summary">推定。根拠に基づいて「〜らしい」。</p>
+      <div class="tags">
+        
+        <span class="tag">終止形接続（ラ変型には連体形接続）</span>
+        <span class="tag">推定</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-meri">
+      <div class="itemhead">
+        <div><span class="word">めり</span><span class="kana">めり</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">ラ変型</span>
+        </div>
+      </div>
+      <p class="summary">推定・婉曲。見た感じで推定。</p>
+      <div class="tags">
+        
+        <span class="tag">終止形接続（ラ変型には連体形接続）</span>
+        <span class="tag">推定</span><span class="tag">婉曲</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-nari-denbun">
+      <div class="itemhead">
+        <div><span class="word">なり</span><span class="kana">なり</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">ラ変型</span>
+        </div>
+      </div>
+      <p class="summary">伝聞・推定。音やうわさによる判断。</p>
+      <div class="tags">
+        
+        <span class="tag">終止形接続（ラ変型には連体形接続）</span>
+        <span class="tag">伝聞</span><span class="tag">推定</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-mashi">
+      <div class="itemhead">
+        <div><span class="word">まし</span><span class="kana">まし</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">特殊型</span>
+        </div>
+      </div>
+      <p class="summary">反実仮想。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続</span>
+        <span class="tag">反実仮想</span><span class="tag">ためらいの意志</span><span class="tag">実現不可能な希望</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-nari-dantei">
+      <div class="itemhead">
+        <div><span class="word">なり</span><span class="kana">なり</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容動詞型</span>
+        </div>
+      </div>
+      <p class="summary">断定・存在。</p>
+      <div class="tags">
+        
+        <span class="tag">体言・連体形接続</span>
+        <span class="tag">断定</span><span class="tag">存在</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-tari-dantei">
+      <div class="itemhead">
+        <div><span class="word">たり</span><span class="kana">たり</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容動詞型</span>
+        </div>
+      </div>
+      <p class="summary">断定。</p>
+      <div class="tags">
+        
+        <span class="tag">体言接続</span>
+        <span class="tag">断定</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-ru">
+      <div class="itemhead">
+        <div><span class="word">る</span><span class="kana">る</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">下二段型</span>
+        </div>
+      </div>
+      <p class="summary">受身・尊敬・自発・可能。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続（四段・ナ変・ラ変）</span>
+        <span class="tag">受身</span><span class="tag">尊敬</span><span class="tag">自発</span><span class="tag">可能</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-raru">
+      <div class="itemhead">
+        <div><span class="word">らる</span><span class="kana">らる</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">下二段型</span>
+        </div>
+      </div>
+      <p class="summary">受身・尊敬・自発・可能。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続（四段・ナ変・ラ変以外）</span>
+        <span class="tag">受身</span><span class="tag">尊敬</span><span class="tag">自発</span><span class="tag">可能</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-su">
+      <div class="itemhead">
+        <div><span class="word">す</span><span class="kana">す</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">下二段型</span>
+        </div>
+      </div>
+      <p class="summary">使役・尊敬。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続（四段・ナ変・ラ変）</span>
+        <span class="tag">使役</span><span class="tag">尊敬</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-sasu">
+      <div class="itemhead">
+        <div><span class="word">さす</span><span class="kana">さす</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">下二段型</span>
+        </div>
+      </div>
+      <p class="summary">使役・尊敬。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続（四段・ナ変・ラ変以外）</span>
+        <span class="tag">使役</span><span class="tag">尊敬</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-shimu">
+      <div class="itemhead">
+        <div><span class="word">しむ</span><span class="kana">しむ</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">下二段型</span>
+        </div>
+      </div>
+      <p class="summary">使役・尊敬。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続</span>
+        <span class="tag">使役</span><span class="tag">尊敬</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-mahoshi">
+      <div class="itemhead">
+        <div><span class="word">まほし</span><span class="kana">まほし</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容詞型</span>
+        </div>
+      </div>
+      <p class="summary">願望。自分の願望を表す。</p>
+      <div class="tags">
+        
+        <span class="tag">未然形接続</span>
+        <span class="tag">願望</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-tashi">
+      <div class="itemhead">
+        <div><span class="word">たし</span><span class="kana">たし</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容詞型</span>
+        </div>
+      </div>
+      <p class="summary">願望。</p>
+      <div class="tags">
+        
+        <span class="tag">連用形接続</span>
+        <span class="tag">願望</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-gotoshi">
+      <div class="itemhead">
+        <div><span class="word">ごとし</span><span class="kana">ごとし</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容詞型</span>
+        </div>
+      </div>
+      <p class="summary">比況・例示。</p>
+      <div class="tags">
+        
+        <span class="tag">体言・連体形・助詞「が／の」接続</span>
+        <span class="tag">比況</span><span class="tag">例示</span>
+      </div>
+    </button>
+    <button class="item" data-id="aux-yaunari">
+      <div class="itemhead">
+        <div><span class="word">やうなり</span><span class="kana">ようなり</span></div>
+        <div class="badges">
+          <span class="badge aux">助動詞</span>
+          <span class="badge main">形容動詞型</span>
+        </div>
+      </div>
+      <p class="summary">比況・例示。</p>
+      <div class="tags">
+        
+        <span class="tag">体言・連体形接続</span>
+        <span class="tag">比況</span><span class="tag">例示</span>
+      </div>
+    </button></section>
+    <p class="footer">※ 動詞は例語単位ではなく活用の種類ごとにまとめています。助動詞「なり」「たり」は意味・接続の違いがあるため別項目として登録しています。</p>
+  </main>
+
+  <main id="detail" class="detail">
+    <div class="backbar"><button class="backbtn" id="backBtn">← 一覧に戻る</button></div>
+    <div id="detailContent"></div>
+  </main>
+</div>
+
+<script>
+const WORDS = [
+  {
+    "id": "verb-yodan",
+    "type": "動詞",
+    "word": "四段活用",
+    "kana": "よだんかつよう",
+    "conjType": "四段活用",
+    "row": "ア・イ・ウ・エ段型",
+    "summary": "未然形a段、連用形i段、終止・連体形u段、已然・命令形e段で活用する。",
+    "meanings": [
+      "a・i・u・u・e・e",
+      "正格活用"
+    ],
+    "examples": [
+      {
+        "text": "泣く：泣か・泣き・泣く・泣く・泣け・泣け",
+        "translation": "カ行四段活用の例。"
+      },
+      {
+        "text": "思ふ：思は・思ひ・思ふ・思ふ・思へ・思へ",
+        "translation": "ハ行四段活用の例。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：泣／思",
+      "未然": "a段",
+      "連用": "i段",
+      "終止": "u段",
+      "連体": "u段",
+      "已然": "e段",
+      "命令": "e段"
+    },
+    "note": "四段活用は、語尾が四つの段にまたがって変化する活用。『ア・イ・ウ・ウ・エ・エ』と覚える。例：泣か・泣き・泣く・泣く・泣け・泣け。"
+  },
+  {
+    "id": "verb-kami-ichidan",
+    "type": "動詞",
+    "word": "上一段活用",
+    "kana": "かみいちだんかつよう",
+    "conjType": "上一段活用",
+    "row": "イ段型",
+    "summary": "イ段を中心に活用する一段活用。代表例は『見る』『射る』。",
+    "meanings": [
+      "イ段のみ",
+      "正格活用"
+    ],
+    "examples": [
+      {
+        "text": "見る：見・見・見る・見る・見れ・見よ",
+        "translation": "マ行上一段活用の例。"
+      },
+      {
+        "text": "射る：射・射・射る・射る・射れ・射よ",
+        "translation": "ヤ行上一段活用の例。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：見／射",
+      "未然": "i段",
+      "連用": "i段",
+      "終止": "iる",
+      "連体": "iる",
+      "已然": "iれ",
+      "命令": "iよ"
+    },
+    "note": "上一段活用は、イ段だけで活用する。古文では代表語として『見る』『射る』などを覚える。"
+  },
+  {
+    "id": "verb-kami-nidan",
+    "type": "動詞",
+    "word": "上二段活用",
+    "kana": "かみにだんかつよう",
+    "conjType": "上二段活用",
+    "row": "イ段・ウ段型",
+    "summary": "イ段とウ段の二段で活用する。現代語で上一段になるものが多い。",
+    "meanings": [
+      "i・i・u・uる・uれ・iよ",
+      "正格活用"
+    ],
+    "examples": [
+      {
+        "text": "過ぐ：過ぎ・過ぎ・過ぐ・過ぐる・過ぐれ・過ぎよ",
+        "translation": "ガ行上二段活用の例。"
+      },
+      {
+        "text": "起く：起き・起き・起く・起くる・起くれ・起きよ",
+        "translation": "カ行上二段活用の例。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：過／起",
+      "未然": "i段",
+      "連用": "i段",
+      "終止": "u段",
+      "連体": "uる",
+      "已然": "uれ",
+      "命令": "iよ"
+    },
+    "note": "上二段活用は『イ・イ・ウ・ウる・ウれ・イよ』と覚える。"
+  },
+  {
+    "id": "verb-shimo-ichidan",
+    "type": "動詞",
+    "word": "下一段活用",
+    "kana": "しもいちだんかつよう",
+    "conjType": "下一段活用",
+    "row": "エ段型",
+    "summary": "エ段を中心に活用する一段活用。古典では代表語『蹴る』を覚える。",
+    "meanings": [
+      "エ段のみ",
+      "正格活用"
+    ],
+    "examples": [
+      {
+        "text": "蹴る：蹴・蹴・蹴る・蹴る・蹴れ・蹴よ",
+        "translation": "古典の下一段活用の代表例。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：蹴",
+      "未然": "e段",
+      "連用": "e段",
+      "終止": "eる",
+      "連体": "eる",
+      "已然": "eれ",
+      "命令": "eよ"
+    },
+    "note": "古典の下一段活用は数が少なく、基本的には『蹴る』を代表として覚える。"
+  },
+  {
+    "id": "verb-shimo-nidan",
+    "type": "動詞",
+    "word": "下二段活用",
+    "kana": "しもにだんかつよう",
+    "conjType": "下二段活用",
+    "row": "エ段・ウ段型",
+    "summary": "エ段とウ段の二段で活用する。現代語で下一段になるものが多い。",
+    "meanings": [
+      "e・e・u・uる・uれ・eよ",
+      "正格活用"
+    ],
+    "examples": [
+      {
+        "text": "上ぐ：上げ・上げ・上ぐ・上ぐる・上ぐれ・上げよ",
+        "translation": "ガ行下二段活用の例。"
+      },
+      {
+        "text": "捨つ：捨て・捨て・捨つ・捨つる・捨つれ・捨てよ",
+        "translation": "タ行下二段活用の例。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：上／捨",
+      "未然": "e段",
+      "連用": "e段",
+      "終止": "u段",
+      "連体": "uる",
+      "已然": "uれ",
+      "命令": "eよ"
+    },
+    "note": "下二段活用は『エ・エ・ウ・ウる・ウれ・エよ』と覚える。"
+  },
+  {
+    "id": "verb-kahen",
+    "type": "動詞",
+    "word": "カ行変格活用",
+    "kana": "かぎょうへんかくかつよう",
+    "conjType": "カ行変格活用",
+    "row": "カ行",
+    "summary": "変格活用。該当語は基本的に『来』だけ。",
+    "meanings": [
+      "こ・き・く・くる・くれ・こ／こよ",
+      "変格活用"
+    ],
+    "examples": [
+      {
+        "text": "来：こ・き・く・くる・くれ・こ／こよ",
+        "translation": "カ行変格活用。終止形は『く』。"
+      }
+    ],
+    "forms": {
+      "語幹": "—",
+      "未然": "こ",
+      "連用": "き",
+      "終止": "く",
+      "連体": "くる",
+      "已然": "くれ",
+      "命令": "こ／こよ"
+    },
+    "note": "カ変は『来』だけと覚える。活用は『こ・き・く・くる・くれ・こ／こよ』。"
+  },
+  {
+    "id": "verb-sahen",
+    "type": "動詞",
+    "word": "サ行変格活用",
+    "kana": "さぎょうへんかくかつよう",
+    "conjType": "サ行変格活用",
+    "row": "サ行",
+    "summary": "変格活用。『す』『おはす』などが該当する。",
+    "meanings": [
+      "せ・し・す・する・すれ・せよ",
+      "変格活用"
+    ],
+    "examples": [
+      {
+        "text": "す：せ・し・す・する・すれ・せよ",
+        "translation": "サ行変格活用の基本。"
+      },
+      {
+        "text": "おはす：おはせ・おはし・おはす・おはする・おはすれ・おはせよ",
+        "translation": "サ変型で活用する尊敬語。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：—／おは",
+      "未然": "せ",
+      "連用": "し",
+      "終止": "す",
+      "連体": "する",
+      "已然": "すれ",
+      "命令": "せよ"
+    },
+    "note": "サ変は『せ・し・す・する・すれ・せよ』。『おはす』もサ変型で活用する。"
+  },
+  {
+    "id": "verb-nahen",
+    "type": "動詞",
+    "word": "ナ行変格活用",
+    "kana": "なぎょうへんかくかつよう",
+    "conjType": "ナ行変格活用",
+    "row": "ナ行",
+    "summary": "変格活用。『死ぬ』『往ぬ』が代表。",
+    "meanings": [
+      "な・に・ぬ・ぬる・ぬれ・ね",
+      "変格活用"
+    ],
+    "examples": [
+      {
+        "text": "死ぬ：死な・死に・死ぬ・死ぬる・死ぬれ・死ね",
+        "translation": "ナ行変格活用の例。"
+      },
+      {
+        "text": "往ぬ：往な・往に・往ぬ・往ぬる・往ぬれ・往ね",
+        "translation": "『去ぬ』とも書く。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：死／往",
+      "未然": "な",
+      "連用": "に",
+      "終止": "ぬ",
+      "連体": "ぬる",
+      "已然": "ぬれ",
+      "命令": "ね"
+    },
+    "note": "ナ変は『死ぬ』『往ぬ』を代表として覚える。活用は『な・に・ぬ・ぬる・ぬれ・ね』。"
+  },
+  {
+    "id": "verb-rahen",
+    "type": "動詞",
+    "word": "ラ行変格活用",
+    "kana": "らぎょうへんかくかつよう",
+    "conjType": "ラ行変格活用",
+    "row": "ラ行",
+    "summary": "変格活用。終止形が『り』で終わる点に注意。",
+    "meanings": [
+      "ら・り・り・る・れ・れ",
+      "変格活用"
+    ],
+    "examples": [
+      {
+        "text": "あり：あら・あり・あり・ある・あれ・あれ",
+        "translation": "ラ行変格活用の代表。"
+      },
+      {
+        "text": "をり：をら・をり・をり・をる・をれ・をれ",
+        "translation": "存在・滞在を表す。"
+      }
+    ],
+    "forms": {
+      "語幹": "例：あ／を",
+      "未然": "ら",
+      "連用": "り",
+      "終止": "り",
+      "連体": "る",
+      "已然": "れ",
+      "命令": "れ"
+    },
+    "note": "ラ変は『ら・り・り・る・れ・れ』。終止形が『る』ではなく『り』になる。"
+  },
+  {
+    "id": "aux-ki",
+    "type": "助動詞",
+    "word": "き",
+    "kana": "き",
+    "conjType": "特殊型",
+    "connection": "連用形接続",
+    "summary": "過去。直接経験した過去を表すことが多い。",
+    "meanings": [
+      "過去"
+    ],
+    "forms": {
+      "基本形": "き",
+      "語幹": "—",
+      "未然": "せ",
+      "連用": "—",
+      "終止": "き",
+      "連体": "し",
+      "已然": "しか",
+      "命令": "—"
+    },
+    "note": "「き・し・しか」を中心に覚える。"
+  },
+  {
+    "id": "aux-keri",
+    "type": "助動詞",
+    "word": "けり",
+    "kana": "けり",
+    "conjType": "ラ変型",
+    "connection": "連用形接続",
+    "summary": "過去・詠嘆。物語文で多用。",
+    "meanings": [
+      "過去",
+      "詠嘆"
+    ],
+    "forms": {
+      "基本形": "けり",
+      "語幹": "け",
+      "未然": "けら",
+      "連用": "—",
+      "終止": "けり",
+      "連体": "ける",
+      "已然": "けれ",
+      "命令": "—"
+    },
+    "note": "和歌では「〜けり」で詠嘆になることが多い。"
+  },
+  {
+    "id": "aux-tsu",
+    "type": "助動詞",
+    "word": "つ",
+    "kana": "つ",
+    "conjType": "下二段型",
+    "connection": "連用形接続",
+    "summary": "完了・強意。",
+    "meanings": [
+      "完了",
+      "強意"
+    ],
+    "forms": {
+      "基本形": "つ",
+      "語幹": "—",
+      "未然": "て",
+      "連用": "て",
+      "終止": "つ",
+      "連体": "つる",
+      "已然": "つれ",
+      "命令": "てよ"
+    },
+    "note": "「つ・ぬ」は完了で、推量表現と結ぶと強意になりやすい。"
+  },
+  {
+    "id": "aux-nu",
+    "type": "助動詞",
+    "word": "ぬ",
+    "kana": "ぬ",
+    "conjType": "ナ変型",
+    "connection": "連用形接続",
+    "summary": "完了・強意。",
+    "meanings": [
+      "完了",
+      "強意"
+    ],
+    "forms": {
+      "基本形": "ぬ",
+      "語幹": "—",
+      "未然": "な",
+      "連用": "に",
+      "終止": "ぬ",
+      "連体": "ぬる",
+      "已然": "ぬれ",
+      "命令": "ね"
+    },
+    "note": "打消の助動詞「ず」の連体形「ぬ」と識別する。"
+  },
+  {
+    "id": "aux-tari-kanryo",
+    "type": "助動詞",
+    "word": "たり",
+    "kana": "たり",
+    "conjType": "ラ変型",
+    "connection": "連用形接続",
+    "summary": "完了・存続。",
+    "meanings": [
+      "完了",
+      "存続"
+    ],
+    "forms": {
+      "基本形": "たり",
+      "語幹": "た",
+      "未然": "たら",
+      "連用": "たり",
+      "終止": "たり",
+      "連体": "たる",
+      "已然": "たれ",
+      "命令": "たれ"
+    },
+    "note": "断定の「たり」とは接続で識別する。完了は連用形接続。"
+  },
+  {
+    "id": "aux-ri",
+    "type": "助動詞",
+    "word": "り",
+    "kana": "り",
+    "conjType": "ラ変型",
+    "connection": "サ変未然形・四段已然形接続",
+    "summary": "完了・存続。",
+    "meanings": [
+      "完了",
+      "存続"
+    ],
+    "forms": {
+      "基本形": "り",
+      "語幹": "—",
+      "未然": "ら",
+      "連用": "り",
+      "終止": "り",
+      "連体": "る",
+      "已然": "れ",
+      "命令": "れ"
+    },
+    "note": "接続は「サ未四已」と覚える。"
+  },
+  {
+    "id": "aux-zu",
+    "type": "助動詞",
+    "word": "ず",
+    "kana": "ず",
+    "conjType": "特殊型",
+    "connection": "未然形接続",
+    "summary": "打消。",
+    "meanings": [
+      "打消"
+    ],
+    "forms": {
+      "基本形": "ず",
+      "語幹": "—",
+      "未然": "ず／ざら",
+      "連用": "ず／ざり",
+      "終止": "ず",
+      "連体": "ぬ／ざる",
+      "已然": "ね／ざれ",
+      "命令": "ざれ"
+    },
+    "note": "「ぬ」は打消「ず」の連体形の場合と、完了「ぬ」の終止形の場合がある。"
+  },
+  {
+    "id": "aux-mu",
+    "type": "助動詞",
+    "word": "む（ん）",
+    "kana": "む",
+    "conjType": "四段型",
+    "connection": "未然形接続",
+    "summary": "推量を中心に、意志・勧誘など多義。",
+    "meanings": [
+      "推量",
+      "意志",
+      "適当",
+      "勧誘",
+      "仮定",
+      "婉曲"
+    ],
+    "forms": {
+      "基本形": "む",
+      "語幹": "—",
+      "未然": "ま",
+      "連用": "—",
+      "終止": "む",
+      "連体": "む",
+      "已然": "め",
+      "命令": "—"
+    },
+    "note": "文末なら推量・意志、連体修飾なら仮定・婉曲を疑う。"
+  },
+  {
+    "id": "aux-muzu",
+    "type": "助動詞",
+    "word": "むず（んず）",
+    "kana": "むず",
+    "conjType": "サ変型",
+    "connection": "未然形接続",
+    "summary": "推量・意志。",
+    "meanings": [
+      "推量",
+      "意志"
+    ],
+    "forms": {
+      "基本形": "むず",
+      "語幹": "む",
+      "未然": "むぜ",
+      "連用": "むじ",
+      "終止": "むず",
+      "連体": "むずる",
+      "已然": "むずれ",
+      "命令": "—"
+    },
+    "note": "「むとす」から生じた助動詞。意味は「む」に近い。"
+  },
+  {
+    "id": "aux-beshi",
+    "type": "助動詞",
+    "word": "べし",
+    "kana": "べし",
+    "conjType": "形容詞型",
+    "connection": "終止形接続（ラ変型には連体形接続）",
+    "summary": "推量・意志・可能・当然・命令・適当。",
+    "meanings": [
+      "推量",
+      "意志",
+      "可能",
+      "当然",
+      "命令",
+      "適当"
+    ],
+    "forms": {
+      "基本形": "べし",
+      "語幹": "べ",
+      "未然": "べく／べから",
+      "連用": "べく／べかり",
+      "終止": "べし",
+      "連体": "べき／べかる",
+      "已然": "べけれ",
+      "命令": "—"
+    },
+    "note": "意味は文脈で判断。「べし」は多義助動詞の代表。"
+  },
+  {
+    "id": "aux-maji",
+    "type": "助動詞",
+    "word": "まじ",
+    "kana": "まじ",
+    "conjType": "形容詞型",
+    "connection": "終止形接続（ラ変型には連体形接続）",
+    "summary": "打消推量・打消意志など、「べし」の打消に近い。",
+    "meanings": [
+      "打消推量",
+      "打消意志",
+      "不可能",
+      "打消当然",
+      "禁止",
+      "不適当"
+    ],
+    "forms": {
+      "基本形": "まじ",
+      "語幹": "まじ",
+      "未然": "まじく／まじから",
+      "連用": "まじく／まじかり",
+      "終止": "まじ",
+      "連体": "まじき／まじかる",
+      "已然": "まじけれ",
+      "命令": "—"
+    },
+    "note": "「べし」の否定版として意味を対応させて覚える。"
+  },
+  {
+    "id": "aux-ramu",
+    "type": "助動詞",
+    "word": "らむ（らん）",
+    "kana": "らむ",
+    "conjType": "四段型",
+    "connection": "終止形接続（ラ変型には連体形接続）",
+    "summary": "現在推量。",
+    "meanings": [
+      "現在推量",
+      "現在原因推量",
+      "伝聞",
+      "婉曲"
+    ],
+    "forms": {
+      "基本形": "らむ",
+      "語幹": "ら",
+      "未然": "らま",
+      "連用": "—",
+      "終止": "らむ",
+      "連体": "らむ",
+      "已然": "らめ",
+      "命令": "—"
+    },
+    "note": "目の前にない現在のことを推量する。"
+  },
+  {
+    "id": "aux-kemu",
+    "type": "助動詞",
+    "word": "けむ（けん）",
+    "kana": "けむ",
+    "conjType": "四段型",
+    "connection": "連用形接続",
+    "summary": "過去推量。",
+    "meanings": [
+      "過去推量",
+      "過去原因推量",
+      "伝聞",
+      "婉曲"
+    ],
+    "forms": {
+      "基本形": "けむ",
+      "語幹": "け",
+      "未然": "けま",
+      "連用": "—",
+      "終止": "けむ",
+      "連体": "けむ",
+      "已然": "けめ",
+      "命令": "—"
+    },
+    "note": "過去の事柄について推量する。"
+  },
+  {
+    "id": "aux-rashi",
+    "type": "助動詞",
+    "word": "らし",
+    "kana": "らし",
+    "conjType": "特殊型",
+    "connection": "終止形接続（ラ変型には連体形接続）",
+    "summary": "推定。根拠に基づいて「〜らしい」。",
+    "meanings": [
+      "推定"
+    ],
+    "forms": {
+      "基本形": "らし",
+      "語幹": "—",
+      "未然": "—",
+      "連用": "—",
+      "終止": "らし",
+      "連体": "らし",
+      "已然": "らし",
+      "命令": "—"
+    },
+    "note": "客観的根拠にもとづく推定。"
+  },
+  {
+    "id": "aux-meri",
+    "type": "助動詞",
+    "word": "めり",
+    "kana": "めり",
+    "conjType": "ラ変型",
+    "connection": "終止形接続（ラ変型には連体形接続）",
+    "summary": "推定・婉曲。見た感じで推定。",
+    "meanings": [
+      "推定",
+      "婉曲"
+    ],
+    "forms": {
+      "基本形": "めり",
+      "語幹": "め",
+      "未然": "めら",
+      "連用": "—",
+      "終止": "めり",
+      "連体": "める",
+      "已然": "めれ",
+      "命令": "—"
+    },
+    "note": "視覚にもとづく推定に用いられやすい。"
+  },
+  {
+    "id": "aux-nari-denbun",
+    "type": "助動詞",
+    "word": "なり",
+    "kana": "なり",
+    "conjType": "ラ変型",
+    "connection": "終止形接続（ラ変型には連体形接続）",
+    "summary": "伝聞・推定。音やうわさによる判断。",
+    "meanings": [
+      "伝聞",
+      "推定"
+    ],
+    "forms": {
+      "基本形": "なり",
+      "語幹": "な",
+      "未然": "なら",
+      "連用": "なり",
+      "終止": "なり",
+      "連体": "なる",
+      "已然": "なれ",
+      "命令": "—"
+    },
+    "note": "断定「なり」とは接続で識別する。伝聞・推定は終止形接続。"
+  },
+  {
+    "id": "aux-mashi",
+    "type": "助動詞",
+    "word": "まし",
+    "kana": "まし",
+    "conjType": "特殊型",
+    "connection": "未然形接続",
+    "summary": "反実仮想。",
+    "meanings": [
+      "反実仮想",
+      "ためらいの意志",
+      "実現不可能な希望"
+    ],
+    "forms": {
+      "基本形": "まし",
+      "語幹": "—",
+      "未然": "ませ／ましか",
+      "連用": "まし",
+      "終止": "まし",
+      "連体": "まし",
+      "已然": "ましか",
+      "命令": "—"
+    },
+    "note": "「ませば〜まし」の形で反実仮想を表しやすい。"
+  },
+  {
+    "id": "aux-nari-dantei",
+    "type": "助動詞",
+    "word": "なり",
+    "kana": "なり",
+    "conjType": "形容動詞型",
+    "connection": "体言・連体形接続",
+    "summary": "断定・存在。",
+    "meanings": [
+      "断定",
+      "存在"
+    ],
+    "forms": {
+      "基本形": "なり",
+      "語幹": "な",
+      "未然": "なら",
+      "連用": "なり／に",
+      "終止": "なり",
+      "連体": "なる",
+      "已然": "なれ",
+      "命令": "なれ"
+    },
+    "note": "伝聞・推定「なり」とは接続で識別する。断定は体言・連体形接続。"
+  },
+  {
+    "id": "aux-tari-dantei",
+    "type": "助動詞",
+    "word": "たり",
+    "kana": "たり",
+    "conjType": "形容動詞型",
+    "connection": "体言接続",
+    "summary": "断定。",
+    "meanings": [
+      "断定"
+    ],
+    "forms": {
+      "基本形": "たり",
+      "語幹": "た",
+      "未然": "たら",
+      "連用": "たり／と",
+      "終止": "たり",
+      "連体": "たる",
+      "已然": "たれ",
+      "命令": "たれ"
+    },
+    "note": "完了「たり」とは接続で識別する。断定は体言接続。"
+  },
+  {
+    "id": "aux-ru",
+    "type": "助動詞",
+    "word": "る",
+    "kana": "る",
+    "conjType": "下二段型",
+    "connection": "未然形接続（四段・ナ変・ラ変）",
+    "summary": "受身・尊敬・自発・可能。",
+    "meanings": [
+      "受身",
+      "尊敬",
+      "自発",
+      "可能"
+    ],
+    "forms": {
+      "基本形": "る",
+      "語幹": "—",
+      "未然": "れ",
+      "連用": "れ",
+      "終止": "る",
+      "連体": "るる",
+      "已然": "るれ",
+      "命令": "れよ"
+    },
+    "note": "四段・ナ変・ラ変の未然形に付く。"
+  },
+  {
+    "id": "aux-raru",
+    "type": "助動詞",
+    "word": "らる",
+    "kana": "らる",
+    "conjType": "下二段型",
+    "connection": "未然形接続（四段・ナ変・ラ変以外）",
+    "summary": "受身・尊敬・自発・可能。",
+    "meanings": [
+      "受身",
+      "尊敬",
+      "自発",
+      "可能"
+    ],
+    "forms": {
+      "基本形": "らる",
+      "語幹": "ら",
+      "未然": "られ",
+      "連用": "られ",
+      "終止": "らる",
+      "連体": "らるる",
+      "已然": "らるれ",
+      "命令": "られよ"
+    },
+    "note": "上一段・上二段・下一段・下二段・カ変・サ変などの未然形に付く。"
+  },
+  {
+    "id": "aux-su",
+    "type": "助動詞",
+    "word": "す",
+    "kana": "す",
+    "conjType": "下二段型",
+    "connection": "未然形接続（四段・ナ変・ラ変）",
+    "summary": "使役・尊敬。",
+    "meanings": [
+      "使役",
+      "尊敬"
+    ],
+    "forms": {
+      "基本形": "す",
+      "語幹": "—",
+      "未然": "せ",
+      "連用": "せ",
+      "終止": "す",
+      "連体": "する",
+      "已然": "すれ",
+      "命令": "せよ"
+    },
+    "note": "四段・ナ変・ラ変の未然形に付く。動詞「す」と区別する。"
+  },
+  {
+    "id": "aux-sasu",
+    "type": "助動詞",
+    "word": "さす",
+    "kana": "さす",
+    "conjType": "下二段型",
+    "connection": "未然形接続（四段・ナ変・ラ変以外）",
+    "summary": "使役・尊敬。",
+    "meanings": [
+      "使役",
+      "尊敬"
+    ],
+    "forms": {
+      "基本形": "さす",
+      "語幹": "さ",
+      "未然": "させ",
+      "連用": "させ",
+      "終止": "さす",
+      "連体": "さする",
+      "已然": "さすれ",
+      "命令": "させよ"
+    },
+    "note": "四段・ナ変・ラ変以外の未然形に付く。"
+  },
+  {
+    "id": "aux-shimu",
+    "type": "助動詞",
+    "word": "しむ",
+    "kana": "しむ",
+    "conjType": "下二段型",
+    "connection": "未然形接続",
+    "summary": "使役・尊敬。",
+    "meanings": [
+      "使役",
+      "尊敬"
+    ],
+    "forms": {
+      "基本形": "しむ",
+      "語幹": "し",
+      "未然": "しめ",
+      "連用": "しめ",
+      "終止": "しむ",
+      "連体": "しむる",
+      "已然": "しむれ",
+      "命令": "しめよ"
+    },
+    "note": "漢文訓読調の文章にも多い。"
+  },
+  {
+    "id": "aux-mahoshi",
+    "type": "助動詞",
+    "word": "まほし",
+    "kana": "まほし",
+    "conjType": "形容詞型",
+    "connection": "未然形接続",
+    "summary": "願望。自分の願望を表す。",
+    "meanings": [
+      "願望"
+    ],
+    "forms": {
+      "基本形": "まほし",
+      "語幹": "まほし",
+      "未然": "まほしく／まほしから",
+      "連用": "まほしく／まほしかり",
+      "終止": "まほし",
+      "連体": "まほしき／まほしかる",
+      "已然": "まほしけれ",
+      "命令": "—"
+    },
+    "note": "「〜たい」と訳す。"
+  },
+  {
+    "id": "aux-tashi",
+    "type": "助動詞",
+    "word": "たし",
+    "kana": "たし",
+    "conjType": "形容詞型",
+    "connection": "連用形接続",
+    "summary": "願望。",
+    "meanings": [
+      "願望"
+    ],
+    "forms": {
+      "基本形": "たし",
+      "語幹": "た",
+      "未然": "たく／たから",
+      "連用": "たく／たかり",
+      "終止": "たし",
+      "連体": "たき／たかる",
+      "已然": "たけれ",
+      "命令": "—"
+    },
+    "note": "現代語の「〜たい」に近い。"
+  },
+  {
+    "id": "aux-gotoshi",
+    "type": "助動詞",
+    "word": "ごとし",
+    "kana": "ごとし",
+    "conjType": "形容詞型",
+    "connection": "体言・連体形・助詞「が／の」接続",
+    "summary": "比況・例示。",
+    "meanings": [
+      "比況",
+      "例示"
+    ],
+    "forms": {
+      "基本形": "ごとし",
+      "語幹": "ごと",
+      "未然": "ごとく",
+      "連用": "ごとく",
+      "終止": "ごとし",
+      "連体": "ごとき",
+      "已然": "ごとけれ",
+      "命令": "—"
+    },
+    "note": "「〜のようだ」と訳す。"
+  },
+  {
+    "id": "aux-yaunari",
+    "type": "助動詞",
+    "word": "やうなり",
+    "kana": "ようなり",
+    "conjType": "形容動詞型",
+    "connection": "体言・連体形接続",
+    "summary": "比況・例示。",
+    "meanings": [
+      "比況",
+      "例示"
+    ],
+    "forms": {
+      "基本形": "やうなり",
+      "語幹": "やう",
+      "未然": "やうなら",
+      "連用": "やうなり／やうに",
+      "終止": "やうなり",
+      "連体": "やうなる",
+      "已然": "やうなれ",
+      "命令": "やうなれ"
+    },
+    "note": "歴史的仮名遣いでは「やう」。"
+  }
+];
+
+const state = { type:'all', q:'', conj:'', conn:'' };
+const $ = sel => document.querySelector(sel);
+const listEl = $('#list'), countEl = $('#count');
+const homeEl = $('#home'), detailEl = $('#detail'), detailContent = $('#detailContent');
+
+const savedTheme = localStorage.getItem('kobun-theme');
+if(savedTheme === 'light') document.documentElement.classList.add('light');
+function syncThemeBtn(){ $('#themeBtn').textContent = document.documentElement.classList.contains('light') ? '☀️' : '🌙'; }
+syncThemeBtn();
+
+$('#themeBtn').addEventListener('click', () => {
+  document.documentElement.classList.toggle('light');
+  localStorage.setItem('kobun-theme', document.documentElement.classList.contains('light') ? 'light' : 'dark');
+  syncThemeBtn();
+});
+
+function unique(arr){ return [...new Set(arr.filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')); }
+function initFilters(){
+  const conjs = unique(WORDS.map(w=>w.conjType));
+  const conSel = $('#conjFilter');
+  conjs.forEach(v=> conSel.insertAdjacentHTML('beforeend', `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`));
+  const conns = unique(WORDS.filter(w=>w.type==='助動詞').map(w=>w.connection));
+  const connSel = $('#connFilter');
+  conns.forEach(v=> connSel.insertAdjacentHTML('beforeend', `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`));
+}
+function escapeHtml(s=''){ return String(s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
+function haystack(w){
+  return [
+    w.word,w.kana,w.type,w.conjType,w.row,w.connection,w.summary,w.note,
+    ...(w.meanings||[]),
+    ...Object.values(w.forms||{}),
+    ...(w.examples||[]).flatMap(e=>[e.text,e.translation])
+  ].join(' ').toLowerCase();
+}
+function filtered(){
+  const q = state.q.trim().toLowerCase();
+  return WORDS.filter(w => {
+    if(state.type !== 'all' && w.type !== state.type) return false;
+    if(state.conj && w.conjType !== state.conj) return false;
+    if(state.conn && w.connection !== state.conn) return false;
+    if(q && !haystack(w).includes(q)) return false;
+    return true;
+  });
+}
+function renderList(){
+  const rows = filtered();
+  countEl.textContent = `${rows.length}件 / ${WORDS.length}件`;
+  if(!rows.length){ listEl.innerHTML = '<div class="empty">該当する項目がありません。</div>'; return; }
+  listEl.innerHTML = rows.map(w => `
+    <button class="item" data-id="${escapeHtml(w.id)}">
+      <div class="itemhead">
+        <div><span class="word">${escapeHtml(w.word)}</span><span class="kana">${escapeHtml(w.kana||'')}</span></div>
+        <div class="badges">
+          <span class="badge ${w.type==='動詞'?'verb':'aux'}">${escapeHtml(w.type)}</span>
+          <span class="badge main">${escapeHtml(w.conjType)}</span>
+        </div>
+      </div>
+      <p class="summary">${escapeHtml(w.summary||'')}</p>
+      <div class="tags">
+        ${w.row ? `<span class="tag">${escapeHtml(w.row)}</span>` : ''}
+        ${w.connection ? `<span class="tag">${escapeHtml(w.connection)}</span>` : ''}
+        ${(w.meanings||[]).slice(0,4).map(m=>`<span class="tag">${escapeHtml(m)}</span>`).join('')}
+      </div>
+    </button>`).join('');
+  listEl.querySelectorAll('.item').forEach(btn=> btn.addEventListener('click',()=>showDetail(btn.dataset.id)));
+}
+
+function formTable(w){
+  const order = w.type === '助動詞'
+    ? [
+        ['基本形','基本形'],
+        ['未然','未然形'],
+        ['連用','連用形'],
+        ['終止','終止形'],
+        ['連体','連体形'],
+        ['已然','已然形'],
+        ['命令','命令形']
+      ]
+    : [
+        ['語幹','語幹'],
+        ['未然','未然形'],
+        ['連用','連用形'],
+        ['終止','終止形'],
+        ['連体','連体形'],
+        ['已然','已然形'],
+        ['命令','命令形']
+      ];
+
+  const rows = order.map(([key,label]) => {
+    const raw = (w.forms || {})[key] ?? '—';
+    const isEmpty = raw === '—' || raw === '' || raw === '〇' || raw === '○';
+    return `
+      <div class="vrow">
+        <div class="vform ${isEmpty ? 'empty' : ''}">${escapeHtml(raw)}</div>
+        <div class="vlabel">${escapeHtml(label)}</div>
+      </div>`;
+  }).join('');
+
+  const extra = w.type === '助動詞'
+    ? `<p class="vcaption">活用の型：${escapeHtml(w.conjType)}${w.forms && w.forms['語幹'] ? ` ／ 語幹：${escapeHtml(w.forms['語幹'])}` : ''}</p>`
+    : `<p class="vcaption">活用の種類：${escapeHtml(w.conjType)}${w.row ? ` ／ ${escapeHtml(w.row)}` : ''}</p>`;
+
+  return `<div class="vconj">${rows}</div>${extra}`;
+}
+function showDetail(id){
+  const w = WORDS.find(x=>x.id===id);
+  if(!w) return;
+  detailContent.innerHTML = `
+    <section class="detailHero">
+      <div class="detailTitle">
+        <div>
+          <h2>${escapeHtml(w.word)} <span class="kana">${escapeHtml(w.kana||'')}</span></h2>
+          <p class="summary">${escapeHtml(w.summary||'')}</p>
+        </div>
+        <div class="badges"><span class="badge ${w.type==='動詞'?'verb':'aux'}">${escapeHtml(w.type)}</span></div>
+      </div>
+      <div class="tags">${(w.meanings||[]).map(m=>`<span class="tag">${escapeHtml(m)}</span>`).join('')}</div>
+    </section>
+    <section class="card">
+      <h3>基本情報</h3>
+      <div class="grid2">
+        <div class="kv"><span>品詞</span><b>${escapeHtml(w.type)}</b></div>
+        <div class="kv"><span>活用</span><b>${escapeHtml(w.conjType)}</b></div>
+        ${w.row ? `<div class="kv"><span>行</span><b>${escapeHtml(w.row)}</b></div>` : ''}
+        ${w.connection ? `<div class="kv"><span>接続</span><b>${escapeHtml(w.connection)}</b></div>` : ''}
+      </div>
+    </section>
+    <section class="card">
+      <h3>活用表</h3>
+      ${formTable(w)}
+    </section>
+    <section class="card">
+      <h3>${w.type==='助動詞'?'識別・覚え方のポイント':'補足'}</h3>
+      <p class="note">${escapeHtml(w.note||'')}</p>
+    </section>
+    ${(w.examples&&w.examples.length) ? `<section class="card"><h3>${w.type==='動詞'?'代表例語':'例文・現代語訳'}</h3>${w.examples.map(e=>`<div class="example"><b>${escapeHtml(e.text)}</b><span class="note">${escapeHtml(e.translation)}</span></div>`).join('')}</section>` : ''}
+  `;
+  homeEl.classList.add('hidden');
+  detailEl.classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+$('#backBtn').addEventListener('click',()=>{
+  detailEl.classList.remove('active');
+  homeEl.classList.remove('hidden');
+  setTimeout(()=>$('#q').focus({preventScroll:true}),0);
+});
+$('#q').addEventListener('input', e=>{ state.q=e.target.value; renderList(); });
+$('#conjFilter').addEventListener('change', e=>{ state.conj=e.target.value; renderList(); });
+$('#connFilter').addEventListener('change', e=>{ state.conn=e.target.value; renderList(); });
+$('#typeFilters').addEventListener('click', e=>{
+  const b=e.target.closest('button[data-type]'); if(!b) return;
+  state.type=b.dataset.type;
+  document.querySelectorAll('#typeFilters .pill').forEach(x=>x.classList.toggle('active', x===b));
+  renderList();
+});
+initFilters();
+renderList();
+</script>
+
+
+<div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div></body></html>
